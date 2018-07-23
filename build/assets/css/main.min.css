@@ -196,10 +196,6 @@ html {
 section {
   display: -webkit-box; }
 
-h1 {
-  margin: 0 !important;
-  padding: 0 !important; }
-
 .button,
 button,
 input[type="submit"],
@@ -339,10 +335,33 @@ hr {
   left: 0; }
 
 #header {
-  background: url("../img/img-1.jpg");
-  background-repeat: no-repeat;
+  background: url("../img/img-1.jpg") no-repeat;
   background-size: cover;
-  height: 100vh; }
+  height: 100vh;
+  text-align: center; }
+  #header article {
+    width: 60%;
+    margin: 0 auto; }
+    #header article p {
+      font-size: 16px; }
+  #header h1 {
+    margin-bottom: 10px; }
 
-#header h1 {
-  padding-top: 20px !important; }
+.main-nav {
+  display: flex;
+  margin-top: 20px; }
+  .main-nav li {
+    list-style: none; }
+  .main-nav a {
+    color: black;
+    display: block;
+    border-radius: 5px;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: 900;
+    text-trancsform: uppercase; }
+  .main-nav li:first-child {
+    margin-right: auto;
+    padding: 10px 0; }
+    .main-nav li:first-child a {
+      padding: 0; }
