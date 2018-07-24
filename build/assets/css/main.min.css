@@ -365,3 +365,18 @@ hr {
     padding: 10px 0; }
     .main-nav li:first-child a {
       padding: 0; }
+
+#logos ul {
+  margin: 0;
+  padding: 30px;
+  background: white;
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  text-align: center; }
+  #logos ul li {
+    list-style: none; }
+  #logos ul li i {
+    font-size: 40px;
+    color: #432c22; }
+  #logos ul li p {
+    padding: 10px 0; }
