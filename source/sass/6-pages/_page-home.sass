@@ -44,11 +44,16 @@
   display: grid
   grid-template-columns: repeat(6,auto)
   text-align: center
+  @media only screen and (max-width: 550px)
+    grid-template-columns: repeat(3,auto)
 
   li
     list-style: none
   li i
+    padding-top: 20px
     font-size: 40px
     color: #432c22
   li p
     padding: 10px 0
+
+
