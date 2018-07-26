@@ -416,7 +416,11 @@ hr {
   background: url("../img/img-1.jpg") no-repeat;
   background-size: cover;
   height: 100vh;
-  text-align: center; }
+  text-align: center;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .main-text {
   display: flex;
@@ -429,6 +433,7 @@ hr {
     .main-text article p {
       font-size: 16px; }
   .main-text h1 {
+    -webkit-margin-before: 10px !important;
     margin-bottom: 10px; }
 
 .button {
