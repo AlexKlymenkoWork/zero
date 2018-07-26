@@ -318,7 +318,7 @@ hr {
   height: 0; }
 
 #features {
-  background: #f9f9f9;
+  background: #F7F8F9;
   display: grid;
   text-align: center;
   position: relative;
@@ -361,6 +361,40 @@ hr {
 .fourth {
   border-top: 5px solid #A5A195; }
 
+.descriptionLayout {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .descriptionLayout img {
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.8); }
+
+.info-text {
+  width: 45%;
+  margin: 0 auto; }
+
+#places {
+  background: #F7F8F9;
+  margin-top: -30px; }
+
+.places-layout {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 0 100px 0; }
+
+.info-text {
+  width: 50%; }
+
+#map {
+  border-radius: 15px;
+  height: 400px;
+  width: 60%;
+  margin-left: 50px;
+  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
+  background-color: grey; }
+
 .flex-video {
   height: 0;
   margin-bottom: 0.88889rem;
@@ -383,13 +417,35 @@ hr {
   background-size: cover;
   height: 100vh;
   text-align: center; }
-  #header article {
+
+.main-text {
+  display: flex;
+  flex-direction: column;
+  height: 550px;
+  justify-content: space-between; }
+  .main-text article {
     width: 60%;
     margin: 0 auto; }
-    #header article p {
+    .main-text article p {
       font-size: 16px; }
-  #header h1 {
+  .main-text h1 {
     margin-bottom: 10px; }
+
+.button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 15px 20px;
+  font-size: 25px; }
+  .button:hover {
+    font-size: 20px;
+    border-radius: 50%;
+    color: #111;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: all 0.5s; }
+  .button:visited {
+    color: tomato; }
 
 .main-nav {
   display: flex;

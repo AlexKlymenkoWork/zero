@@ -19,10 +19,15 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </nav>
-      <article>
-          <h1>Hiking</h1>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quia nihil fuga amet laudantium eveniet repudiandae repellat quos porro deserunt.</p>
-      </article>
+      <div class="main-text">
+          <article>
+              <h1>Hiking</h1>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni quia nihil fuga amet laudantium eveniet repudiandae repellat quos porro deserunt.</p>
+          </article>
+          <div class="scroll-btn">
+              <a href="#logos" class="button"> <span><i class="fas fa-angle-down"></span></i></a>
+            </div>
+      </div>
     </div>
   </section>
   <section id="logos">
@@ -47,6 +52,47 @@
       </div>
     </div>
   </section>
+  <section id="description">
+    <div class="wrapper">
+      <div class="descriptionLayout">
+        <img src="assets/img/img-6.jpeg" alt="img-6">
+        <div class="info-text">
+          <h2>Why we should don't stop!</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad quasi necessitatibus porro? Rem temporibus assumenda enim nesciunt at velit eligendi sapiente aliquid reiciendis, rerum tenetur, cum, repellat animi deleniti odit?</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="places">
+    <div class="wrapper">
+      <div class="places-layout">
+        <div class="info-text">
+          <h2>Best for Hiking</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem veritatis quas incidunt voluptatem nulla soluta ab enim possimus officiis tempora! Quibusdam modi molestias enim voluptates itaque. Fugit, dolores id pariatur, veritatis eius ex illo sit, cum dolor ipsum possimus molestias!</p>
+        </div>
+        <div id="map"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Delete -->
+  <br>
+  <br>
+
+<script>
+    // Initialize and add the map
+function initMap() {
+    // The location of Uluru
+    var uluru = {lat: 27.9881, lng: 86.9250};
+    // The map, centered at Uluru
+    var map = new google.maps.Map(
+        document.getElementById('map'), {zoom: 12, center: uluru});
+    // The marker, positioned at Uluru
+    var marker = new google.maps.Marker({position: uluru, map: map});
+  }
+</script>
+  <script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCN4XGeseHQLlcZ-8533YqqwWDoF5BbFmo&callback=initMap">
+  </script>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/app.js"></script>
 </body>
