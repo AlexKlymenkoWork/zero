@@ -3,24 +3,28 @@
   background-size: cover
   height: 100vh
   text-align: center
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  background-attachment: fixed
+  background-position: center
+  background-repeat: no-repeat
+  background-size: cover
+
+
+
 
 .main-text
   display: flex
   flex-direction: column
-  height: 550px
+  height: 500px
   justify-content: space-between
+
+  @media only screen and (max-width: 650px)
+    height: 300px !important
 
 
   article
     width: 60%
     margin: 0 auto
 
-    p
-      font-size: 16px
 
 
   h1
@@ -44,28 +48,6 @@
     color: tomato
 
 
-
-.main-nav
-  display: flex
-  margin-top: 20px
-
-  li
-    list-style: none
-
-  a
-    color: black
-    display: block
-    border-radius: 5px
-    padding: 15px 30px
-    text-decoration: none
-    font-weight: 900
-    text-trancsform: uppercase
-
-  li:first-child
-    margin-right: auto
-    padding: 10px 0
-    a
-      padding: 0
 
 #logos ul
   margin: 0

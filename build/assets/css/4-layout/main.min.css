@@ -1,20 +1,12 @@
-#places {
-  background: #F7F8F9;
-  margin-top: -30px; }
-
-.places-layout {
+.descriptionLayout {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 100px 0 100px 0; }
+  justify-content: space-between; }
+  .descriptionLayout img {
+    width: 40%;
+    border-radius: 15px;
+    box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.8); }
 
 .info-text {
-  width: 50%; }
-
-#map {
-  border-radius: 15px;
-  height: 400px;
-  width: 60%;
-  margin-left: 50px;
-  box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2);
-  background-color: grey; }
+  width: 45%;
+  margin: 0 auto; }

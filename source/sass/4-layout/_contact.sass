@@ -1,0 +1,63 @@
+#contact
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%)
+    background-size: cover
+    h2
+        margin: 50px 0 30px 0
+        text-align: center
+
+.contact-layout
+    display: flex
+    align-items: center
+    justify-content: center
+    padding-bottom: 100px
+
+.contact-form
+    box-shadow: 1px 3px 21px -4px rgba(0, 0, 0, 0.2)
+    height: 100%
+    width: auto
+
+form
+    margin: 30px
+    display: grid
+    grid-gap: 10px
+    grid-template-areas: 'name-lbl email-lbl' 'name email' 'subject-lbl subject-lbl' 'subject subject' 'btn btn'
+
+    @media only screen and (max-width: 550px)
+        grid-template-areas: 'name-lbl name-lbl''name name' 'email-lbl email-lbl''email email' 'subject-lbl subject-lbl' 'subject subject' 'btn btn'
+    .name
+        grid-area: name
+    .email
+        grid-area: email
+    .subject
+        grid-area: subject
+    .name-lbl
+        grid-area: name-lbl
+    .email-lbl
+        grid-area: email-lbl
+    .subject-lbl
+        grid-area: subject-lbl
+    .btn
+        grid-area: btn
+    input
+        background-color: #fff
+        &[type='submit'] 
+            color: $white
+            background: #0d7eb4
+            padding: 12px 20px 
+            border: none
+            border-radius: 4px
+            cursor: pointer
+        &[type='text']
+            width: 100%
+            padding: 12px
+            border: 1px solid #ccc
+            border-radius: 4px
+            box-sizing: border-box
+            margin-top: 6px
+            margin-bottom: 16px
+            resize: verticals
+    .subject
+        background-color: #fff
+
+
+
