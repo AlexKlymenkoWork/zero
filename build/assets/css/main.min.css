@@ -359,6 +359,7 @@ li.nav-toggle {
     width: 100%;
     background: linear-gradient(0deg, #e8e8e8 0%, #f7f8f9 25%, #f1f2f3 75%, #e8e8e8 100%);
     position: absolute;
+    padding-top: 10px;
     top: 0;
     right: 0; }
   .responsive-nav.showNav li {
@@ -487,8 +488,9 @@ li.nav-toggle {
   box-shadow: 0 12px 10px -10px rgba(0, 0, 0, 0.2); }
   @media only screen and (max-width: 650px) {
     #map {
-      height: 400px;
-      width: 80%; } }
+      height: 600px;
+      width: 80%;
+      margin-left: 0; } }
 
 #contact {
   background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
@@ -554,11 +556,20 @@ form {
 footer {
   text-align: center;
   padding: 60px; }
+  footer ul {
+    margin: 0 !important;
+    padding: 0 !important; }
   footer li {
     list-style: none; }
   footer a {
-    padding: 0 20px;
+    padding: 0 30px;
     text-transform: uppercase; }
+    @media only screen and (max-width: 650px) {
+      footer a {
+        display: flex;
+        align-items: center !important;
+        justify-content: center !important;
+        padding-bottom: 10px; } }
   footer .name {
     text-transform: none; }
 
